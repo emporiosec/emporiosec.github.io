@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,183 +9,205 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
     <title>Empório Sec - Cyber Segurança</title>
 </head>
+
 <body>
 
     <div id="overlay">
         <div id="spinner"></div>
     </div>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">
-                <img src="assets/img/logo.png" alt="Empório Sec Logo">
-                <span class="h2 bold text-black">EMPÓRIO SEC</span>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png">
+                Empório Sec - PNZ
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre" onclick="closeMenu()">
-                            <h4>
-                                <span class="bold">QUEM SOMOS</span>
-                            </h4>
-                        </a>
+                        <a class="nav-link" href="#" onclick="collapseNavbar()">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicos" onclick="closeMenu()">
-                            <h4>SERVIÇOS</h4>
-                        </a>
+                        <a class="nav-link" href="#sobre" onclick="collapseNavbar()">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio" onclick="closeMenu()">
-                            <h4>CLIENTES</h4>
-                        </a>
+                        <a class="nav-link" href="#servicos" onclick="collapseNavbar()">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer" onclick="closeMenu()">
-                            <h4>CONTATO</h4>
-                        </a>
+                        <a class="nav-link" href="#footer" onclick="collapseNavbar()">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" style="max-height: 400px;">
-            <div class="carousel-item active">
-                <img src="https://netart1.com.br/wp-content/uploads/2022/02/fundo-slide1-ti-1.png" class="d-block w-100" alt="Slide 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://netart1.com.br/wp-content/uploads/2022/02/fundo-slide1-ti-1.png" class="d-block w-100" alt="Slide 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://netart1.com.br/wp-content/uploads/2022/02/fundo-slide1-ti-1.png" class="d-block w-100" alt="Slide 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> -->
-
-    <section id="sobre" class="bg-muted text-white">
+    <section id="sobre" class="quem-somos-section p-5">
         <div class="container">
-            <h2 class="mb-4">QUEM SOMOS</h2>
-            <p id="sobre-nos-texto" class="texto-resumido">
-                Bem-vindo à Empório Sec, sua parceira local em cibersegurança, situada no coração de Petrolina - PE.
-                Somos
-                mais que uma empresa; somos guardiões digitais comprometidos com a transparência, ética, e a segurança
-                inabalável de seu mundo digital.
-
-                Em um cenário onde a informação é a moeda mais valiosa, entendemos a responsabilidade de proteger o
-                que é mais precioso para você.
-                Somos a única empresa dedicada à cibersegurança em Petrolina, e essa
-                singularidade nos impulsiona a ir além.
-
-                Na Empório Sec, levamos a sério a confiança que você deposita em nós. Nossa abordagem é enraizada na
-                seriedade, profissionalismo e na busca incessante pela excelência. A segurança digital não é apenas uma
-                necessidade; é um investimento vital para o presente e o futuro de seus negócios.
-
-                Com uma equipe especializada, utilizamos as últimas tecnologias para garantir que seus ativos digitais
-                estejam protegidos contra ameaças crescentes. Mais do que mitigar riscos, somos arquitetos de soluções
-                que capacitam seus objetivos, transformando a segurança digital de um gasto em um investimento
-                estratégico.
-
-                Na Empório Sec, sua segurança é nossa missão. Confie em nós para defender o seu mundo digital, porque a
-                proteção vai além dos códigos; ela é construída sobre confiança, integridade e uma parceria duradoura.
-
-                Junte-se a nós nesta jornada digital segura. Seu futuro cibernético começa aqui.
-            </p>
-            <p id="ler-mais-link" class="bg-dark text-white p-2 border btn">Leia mais<span id="icone-ler-mais"></span>
-            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/atendente2.png" alt="Quem Somos" class="img-fluid rounded mb-2">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="quem-somos-title shadow">QUEM SOMOS</h2>
+                    <p class="quem-somos-description shadow bg-info p-3 text-white">
+                        A Empório Sec, localizada em Petrolina - PE, é uma empresa especializada em cibersegurança, comprometida com a transparência, ética e segurança digital. Única em sua área na região, a empresa destaca sua abordagem séria, profissional e busca pela excelência.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="servicos" class="text-black">
         <div class="container">
-            <h2 class="bold text-black">NOSSOS SERVIÇOS</h2>
-            <!-- <p>Conheça nossos serviços e faça seu orçamento.</p> -->
+            <h2 class="bold text-black shadow">NOSSOS SERVIÇOS</h2>
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 1">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/pentest-web.png" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title p-3 h4">Blindagem completa do seu site</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
+                            <h5 class="card-title p-3 h4 text-center shadow">Blindagem para site</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 2">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/pentest-wireless.png" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title p-3 h4">Blindagem completa da sua rede Wifi</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
+                            <h5 class="card-title p-3 h4 text-center shadow">Blindagem para WiFi</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 3">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/pentest-mobile.png" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title p-3 h4">Blindar o aplicativo da sua empresa</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
+                            <h5 class="card-title p-3 h4 text-center shadow">Blindagem de app</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/redes-sociais.png" class="card-img-top" alt="Serviço 1">
+                        <div class="card-body">
+                            <h5 class="card-title p-3 h4 text-center shadow">Recuperação de perfil</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/pentest-personalizado.png" class="card-img-top" alt="Serviço 1">
+                        <div class="card-body">
+                            <h5 class="card-title p-3 h4 text-center shadow">Serviço personalizado</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/lgpd.png" class="card-img-top" alt="Serviço 1">
+                        <div class="card-body">
+                            <h5 class="card-title p-3 h4 text-center shadow">Implementação LGPD</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/mentoria.png" class="card-img-top" alt="Serviço 1">
+                        <div class="card-body">
+                            <h5 class="card-title p-3 h4 text-center shadow">Mentoria Exclusiva</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 4">
+                    <div class="card p-3">
+                        <img src="assets/img/servicos/psi.png" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title p-3 h4">Recuperação de redes sociais</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 4">
-                        <div class="card-body">
-                            <h5 class="card-title p-3 h4">Serviço personalizado para sua empresa</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 4">
-                        <div class="card-body">
-                            <h5 class="card-title p-3 h4">Mentoria e guia completo sobre LGPD</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/servicos/1.jpg" class="card-img-top" alt="Serviço 4">
-                        <div class="card-body">
-                            <h5 class="card-title p-3 h4">Criação de uma PSI para sua empresa</h5>
-                            <button type="button" class="btn btn-primary text-white">Conhecer serviço</button>
-                            <button type="button" class="btn btn-success text-white">Contratar</button>
+                            <h5 class="card-title p-3 h4 text-center shadow">Implementação de PSI</h5>
+                            <div class="text-center" role="group" aria-label="Exemplo básico">
+                                <div type="button" class="btn btn-primary bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/informacao.png">
+                                    CONHECER SERVIÇO
+                                </div>
+                                <div type="button" class="btn btn-success bold m-1 p-2 w-100">
+                                    <img class="img rounded" src="assets/img/icons/whatsapp.png">
+                                    TIRAR DÚVIDAS
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,53 +216,53 @@
         </div>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="text-black">
         <div class="container">
-            <h2>CLIENTES PARCEIROS</h2>
-            <!-- <p>Algumas empresas que são nossas clientes</p> -->
+            <h2 class="bold text-black shadow">CLIENTES & APOIADORES</h2>
 
             <div class="row">
+
                 <div class="col-md-4">
-                    <div class="card p-2">
-                        <img class="border" src="assets/img/clientes/1.jpg" class="card-img-top" alt="Empresa 1">
+                    <div class="card p-3">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title bg-primary p-3 text-white">Microsoft</h5>
-                            <p class="card-text"></p>
+                            <h5 class="card-title h4 text-center">EMPRESA A</h5>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <div class="card p-2">
-                        <img class="border" src="assets/img/clientes/1.jpg" class="card-img-top" alt="Empresa 2">
+                    <div class="card p-3">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title bg-primary p-3 text-white">Microsoft</h5>
-                            <p class="card-text"></p>
+                            <h5 class="card-title h4 text-center">EMPRESA B</h5>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <div class="card p-2">
-                        <img class="border" src="assets/img/clientes/1.jpg" class="card-img-top" alt="Empresa 3">
+                    <div class="card p-3">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title bg-primary p-3 text-white">Microsoft</h5>
-                            <p class="card-text"></p>
+                            <h5 class="card-title h4 text-center">EMPRESA C</h5>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <div class="card p-2">
-                        <img class="border" src="assets/img/clientes/1.jpg" class="card-img-top" alt="Empresa 4">
+                    <div class="card p-3">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Serviço 1">
                         <div class="card-body">
-                            <h5 class="card-title bg-primary p-3 text-white">Microsoft</h5>
-                            <p class="card-text"></p>
+                            <h5 class="card-title h4 text-center">EMPRESA D</h5>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="text-center" id="footer">
+    <!-- <footer class="text-center" id="footer">
         <div class="container">
             <div class="row justify-content-center align-items-center">
 
@@ -254,35 +277,93 @@
                         <a href="https://wa.me/numero_telefone" target="_blank">
                             <img src="assets/img/icons/whatsapp.png" alt="WhatsApp">
                         </a>
-                        <div style="padding:10px;">
-                            <img src="assets/img/icons/gmail.png" alt="Gmail">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/icons/x-twitter.png" alt="X">
+                        </a>
+                        <div>
                             <span>
-                                emporiosecpnz@gmail.com
+                                E-mail: emporiosecpnz@gmail.com
                             </span>
                         </div>
-                        <div style="padding:10px;">
-                            Copyright © 2023 Empório Sec. Todos os direitos reservados. CNPJ: XX.123.456/0001-XX
+                        <div>
+                            <span>
+                                WhatsApp: +55 87 9900X XX00
+                            </span>
                         </div>
+                        
+                    </div>
+                    <div>
+                        Copyright © 2023 Empório Sec. Todos os direitos reservados. CNPJ: XX.123.456/0001-XX
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div>
                         <a style="list-style: none;text-decoration:none;color:#301831;" href="">
-                            <i>
+                            <i class="shadow text-white">
                                 Site desenvolvido por
                             </i>
-                            <img style="width:90px;" src="assets/img/logo.png" alt="Empório Sec">
+                            <img style="width:30px;" src="assets/img/logo.png" alt="Empório Sec">
                         </a>
                     </div>
                 </div>
 
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <footer class="text-center" id="footer">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+    
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="#" target="#">
+                            <img src="assets/img/icons/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" target="#">
+                            <img src="assets/img/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#" target="#">
+                            <img src="assets/img/icons/x-twitter.png" alt="X">
+                        </a>
+                        <a href="#" target="#">
+                            <img src="assets/img/icons/linkedin.png" alt="X">
+                        </a>
+                        <a href="#" target="#">
+                            <img src="assets/img/icons/whatsapp.png" alt="X">
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <span>E-mail: emporiosecpnz@gmail.com</span>
+                        </div>
+                        <div>
+                            <span>Telefone Celular: +55 87 9900X XX00</span>
+                        </div>
+                    </div>
+                    <div>
+                        Copyright © 2023 Empório Sec. Todos os direitos reservados. CNPJ: XX.123.456/0001-XX
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div>
+                        <a style="list-style: none;text-decoration:none;color:#301831;" class="text-white" href="">
+                            <i class="text-white">Site desenvolvido por</i>
+                            <img style="width:30px;" src="assets/img/logo.png" alt="Empório Sec">
+                            Empório Sec
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/site.js"></script>
 
 </body>
+
 </html>

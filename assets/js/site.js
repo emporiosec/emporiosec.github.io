@@ -18,3 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("overlay").style.display = "none";
     }, 2000);
 });
+
+function collapseNavbar() {
+    document.querySelector('.navbar-toggler').click();
+}
